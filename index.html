@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hive Architecture - Agent Zero Ecosystem</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">Hive 🐝</div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#skills">Skills</a>
+            <a href="#integrations">Integrations</a>
+            <a href="#getting-started">Get Started</a>
+            <a href="https://github.com/stupendous-software/skynet" target="_blank" class="btn-primary">GitHub</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Hive Architecture</h1>
+            <p class="hero-subtitle">The Production-Ready Multi-Agent Ecosystem for Real-World AI Assistants</p>
+            <p class="hero-description">Deploy secure, versioned, self-updating agent swarms with shared skill repositories, peer review, and automated CI/CD.</p>
+            <div class="hero-cta">
+                <a href="#getting-started" class="btn-primary">Start Building</a>
+                <a href="#features" class="btn-secondary">Learn More</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-value">4+</span>
+                    <span class="stat-label">Core Skills</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Git-Based</span>
+                    <span class="stat-label">Version Control</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">Docker Native</span>
+                    <span class="stat-label">Deployment</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value">X-API-KEY</span>
+                    <span class="stat-label">Security</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="features" class="section">
+        <div class="container">
+            <h2>Key Advantages Over Other Agent Frameworks</h2>
+            <p class="section-intro">Unlike research prototypes, Hive is built for production deployments with security, scalability, and real integrations baked in.</p>
+            
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🏗️ Hierarchical Delegation</h3>
+                    <p>Master→subordinate architecture with configurable profiles (Developer, Hacker, Researcher) for specialized task execution. Keep context clean and focused.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔧 Skills Ecosystem</h3>
+                    <p>Standardized SKILL.md format for discoverable, documented capabilities. Auto-sync from shared versioned repository with peer review and security audits.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📡 Real Integrations</h3>
+                    <p>Production-ready Signal bridge example. Easily adapt for Slack, Telegram, or any platform with ~50 lines of Python. Works with External API or WebSocket.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>⏰ Native Scheduler</h3>
+                    <p>Built-in cron, planned, and adhoc tasks. Wait for task completion and capture results. No external Celery/Redis needed.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🐳 Docker-First</h3>                   <p>Complete Docker deployment with volume-based isolation. Clone management, heartbeat monitoring, and automated lifecycle operations out of the box.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔒 Security by Design</h3>
+                    <p>X-API-KEY authentication, HTTPS tunnel support, prompt injection safety, sandboxed skill execution, and signed commits enforcement.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔗 Git-Based Distribution</h3>
+                    <p>Skills and tools stored in versioned GitHub repository. Automatic sync via mounted volumes. Fork→Push workflow for contribution.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>📊 Operational Visibility</h3>
+                    <p>Heartbeat monitoring, clone registry, health endpoints, and structured logging. Know exactly what your swarm is doing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section section-alt">
+        <div class="container">
+            <h2>Skills System</h2>
+            <p class="section-intro">Extensibility through the agentskills.io SKILL.md standard. Each skill is a self-contained capability with metadata, documentation, and executable scripts.</p>
+            
+            <div class="skills-showcase">
+                <div class="skill-item">
+                    <h4>agent-clone</h4>
+                    <p>Spawning new Agent Zero Docker instances with isolated memory, unique ports, and automatic heartbeat registration.</p>
+                    <div class="skill-tags"><span>containers</span><span>isolation</span><span>scaling</span></div>
+                </div>
+                <div class="skill-item">
+                    <h4>clone-heartbeat-monitor</h4>
+                    <p>Health and liveness tracking across the swarm via shared heartbeat volume. Graceful degradation and auto-recovery.</p>
+                    <div class="skill-tags"><span>monitoring</span><span>health</span><span>fault-tolerance</span></div>
+                </div>
+                <div class="skill-item">
+                    <h4>clone-manager</h4>
+                    <p>Lifecycle operations: start, stop, restart, delete clones. Enforces max_clones limits and idle timeout cleanup.</p>
+                    <div class="skill-tags"><span>lifecycle</span><span>orchestration</span><span>resource-management</span></div>
+                </div>
+                <div class="skill-item">
+                    <h4>smtp-email-sender</h4>
+                    <p>Send email notifications for hive events. Configurable SMTP with TLS support and HTML/plain text options.</p>
+                    <div class="skill-tags"><span>notifications</span><span>email</span><span>smtp</span></div>
+                </div>
+            </div>
+            
+            <div class="skills-note">
+                <p><strong>📦 Approved Repository:</strong> Skills are stored in <code>shared/vX.Y.Z/</code> with automated CI/CD, security scans (Bandit, Semgrep), and peer review requirements before merging.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="integrations" class="section">
+        <div class="container">
+            <h2>Real-World Integration Example</h2>
+            <p class="section-intro">The complete Signal bridge demonstrates how to connect Agent Zero to any messaging platform using the External API.</p>
+            
+            <div class="integration-box">
+                <div class="integration-diagram">
+                    <div class="diagram-node">Signal User</div>
+                    <div class="diagram-arrow">→</div>
+                    <div class="diagram-node">signal-cli-rest-api</div>
+                    <div class="diagram-arrow">→</div>
+                    <div class="diagram-node">Bridge (Python)</div>
+                    <div class="diagram-arrow">→</div>
+                    <div class="diagram-node">Agent Zero<br>External API</div>
+                    <div class="diagram-arrow">→</div>
+                    <div class="diagram-node">Agent Response</div>
+                    <div class="diagram-arrow">→</div>
+                    <div class="diagram-node">Signal User</div>
+                </div>
+            </div>
+            
+            <div class="integration-features">
+                <h4>Features Included</h4>
+                <ul>
+                    <li>Polling architecture with configurable interval</li>
+                    <li>Configuration via environment variables</li>
+                    <li>Input sanitization and error handling</li>
+                    <li>Structured logging</li>
+                    <li>Docker compose for Signal REST API container</li>
+                    <li>Adaptable client module for other platforms</li>
+                </ul>
+                <p class="integration-note">Adapt the client module to connect to Slack, Telegram, Discord, or custom APIs while keeping the core bridge logic intact.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="getting-started" class="section section-alt">
+        <div class="container">
+            <h2>Getting Started</h2>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>Clone the Hive Ecosystem Repository</h4>
+                        <pre><code>git clone https://github.com/your-org/hive-ecosystem.git</code></pre>
+                        <p>This repository contains approved skills, CI/CD workflows, and governance policies.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Mount the Shared Skills Volume</h4>
+                        <pre><code>docker run -d \
+  -v hive_ecosystem_shared:/a0/usr/ecosystem \
+  -p 5000:5000 \
+  agent0ai/agent-zero:latest</code></pre>
+                        <p>All agents automatically discover skills from the mounted <code>/a0/usr/ecosystem/</code> path.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Enable the Skills System</h4>
+                        <p>In the Agent Zero Web UI, navigate to Settings → Skills and verify that skills from the ecosystem are loaded. You'll see <code>agent-clone</code>, <code>clone-heartbeat-monitor</code>, <code>clone-manager</code>, and <code>smtp-email-sender</code> available.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h4>Start Building Your Swarm</h4>
+                        <pre><code># Spawn a new clone
+agent-clone --port 5001 --memory-subdir clone-alpha</code></pre>
+                        <p>Use the <code>clone-manager</code> skill to orchestrate lifecycle operations across your swarm.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="cta-box">
+                <h3>Ready to Deploy?</h3>
+                <p>Read the full technical documentation and quickstart guide in the main repository.</p>
+                <div class="cta-buttons">
+                    <a href="https://github.com/stupendous-software/skynet" target="_blank" class="btn-primary">Documentation</a>
+                    <a href="https://github.com/stupendous-software/skynet/issues" target="_blank" class="btn-secondary">Community Support</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span>Hive 🐝</span>
+                    <p>Production-Ready Multi-Agent Ecosystem</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/stupendous-software/skynet" target="_blank">GitHub</a>
+                    <a href="#">Documentation</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Security</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Part of the Agent Zero project. Built with ❤️ for production AI deployments.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
